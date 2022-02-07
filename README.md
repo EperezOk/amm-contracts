@@ -2,7 +2,7 @@
 
 The aim of this project is to understand the basic functionality of an AMM (Automatic Market Maker).
 
-The contracts are based on Uniswap v1.
+The contracts are based on Uniswap v1 and on [this](https://github.com/martriay/scAMM) repo.
 
 I've made a frontend to interact and test this project, which you can find here: https://github.com/EperezOk/amm-frontend
 
@@ -30,7 +30,7 @@ In this AMM, the bonding curve is given by the function **X * Y = K**, where X a
 
 #### Brief explanation of the bonding curve implementation in `getAmount()` function at `Exchange.sol`
 
-When making a "swap", let dX = input token amount and dY = output token amount.
+When making a "swap", let `dX = input token amount` and `dY = output token amount`.
 
 We want to determine dY to know the amount of token we have to give to the user given their input amount.
 
@@ -50,7 +50,7 @@ Isolating dY from the equation:
 > 
 > outputAmount = (outputReserve * inputAmount) / (inputReserve + inputAmount)
 
-#### Swapping between 2 ERC20 tokens
+#### Swapping between two ERC20 tokens
 
 Since every pool has ETH as one of its tokens, we cannot make a swap between 2 ERC20 tokens directly.
 
