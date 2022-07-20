@@ -2,7 +2,7 @@
 
 The aim of this project is to understand the basic functionality of an AMM (Automatic Market Maker).
 
-The contracts are based on Uniswap v1 and on [this](https://github.com/martriay/scAMM) repo.
+The contracts are based on Uniswap v1.
 
 I've made a frontend to interact and test this project, which you can find here: https://github.com/EperezOk/amm-frontend
 
@@ -56,7 +56,7 @@ Since every pool has ETH as one of its tokens, we cannot make a swap between 2 E
 
 For that we need to connect two Exchanges using the Registry.
 
-For example, if we have an Exchange for DAI / ETH and another one for BTC / ETH and we want to trade DAI / BTC, the DAI / ETH pool has to:
+For example, if we had an Exchange for DAI / ETH and another one for BTC / ETH and we wanted to trade DAI / BTC, the DAI / ETH pool would have to:
 
 **1.** Change DAI for ETH
 
